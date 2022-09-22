@@ -9,7 +9,9 @@
     "files": [
         "main.ts",
         "README.md",
-        "tutorial_example.md"
+        "tutorial_example.md",
+        "tutorial_example2.md",
+        "tutorial_01_leds.md"
     ],
     "testFiles": [
         "test.ts"
