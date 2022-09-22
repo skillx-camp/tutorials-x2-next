@@ -1,5 +1,9 @@
 # X2 Next - Example Tutorial 01
 
+## It's time to code! @showhint
+
+
+
 ## Micro:bit Programmierung
 
 Starte mit dem ``||basic:forever||`` Block.
@@ -48,11 +52,14 @@ basic.forever(function () {
 })
 ```
 
-## 
 
 
 
 
 
+
+```template
+
+```
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
