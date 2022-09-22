@@ -2,6 +2,7 @@
 
 ## It's time to code! @showhint
 
+![Micro:bit](/static/01/board_01_leds.png)
 
 
 ## Micro:bit Programmierung

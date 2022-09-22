@@ -3,7 +3,7 @@
 
 ## Tutorials
 
-* [Tutorial 01 LEDs](https://philipphgerber.github.io/tutorials-x2-next/tutorial__01_leds)
+* [Tutorial 01 LEDs](https://philipphgerber.github.io/tutorials-x2-next/tutorial_01_leds)
 
 * [Example](https://philipphgerber.github.io/tutorials-x2-next/tutorial_example)
 * [Example 2](https://philipphgerber.github.io/tutorials-x2-next/tutorial_example2)
