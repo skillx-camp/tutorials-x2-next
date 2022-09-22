@@ -67,3 +67,18 @@ On the @boardname@, press button **A** to scroll your text. Press button **B** t
 ## Step 8
 
 Well done! You've completed your first Microsoft MakeCode activity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>

@@ -3,7 +3,7 @@
 
 ## Tutorials
 
-* [Example](/tutorial_example)
+* [Example](/tutorials-x2-next/tutorial_example)
 
 ## Edit this project ![Build status badge](https://github.com/philipphgerber/tutorials-x2-next/workflows/MakeCode/badge.svg)
 
