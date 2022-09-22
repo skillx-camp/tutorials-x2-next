@@ -1,14 +1,9 @@
 
 > Open this page at [https://philipphgerber.github.io/tutorials-x2-next/](https://philipphgerber.github.io/tutorials-x2-next/)
 
-## Use as Extension
+## Tutorials
 
-This repository can be added as an **extension** in MakeCode.
-
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
-* click on **New Project**
-* click on **Extensions** under the gearwheel menu
-* search for **https://github.com/philipphgerber/tutorials-x2-next** and import
+* [Example](/tutorial_example)
 
 ## Edit this project ![Build status badge](https://github.com/philipphgerber/tutorials-x2-next/workflows/MakeCode/badge.svg)
 
