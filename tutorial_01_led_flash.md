@@ -1,9 +1,11 @@
 # LED blinken lassen. 
 
 ## Einführung @unplugged
-Der Dialog wird im Fenster angezeigt und übersprungen,
-sobald ``|ok|`` gedrückt wird.
-Dient deshalb gut als Einführungstext des Tutorials.
+
+Schaltplan LED:
+
+![Schaltplan LED](/static/tutorials/01_leds_board.png)
+
 
 ## Variabeln für die LEDs
 
@@ -24,7 +26,7 @@ let LED0 = true
 
 ## LED0 ein- und ausschalten
 
-Wenn Knopf A gedrückt wird, soll LED0 ein- und wieder ausgeschaltet werden.
+Wenn **Knopf A** gedrückt wird, soll **LED0** ein- und wieder ausgeschaltet werden.
 
 ``[LED0 = !(LED0)]``
 
@@ -37,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten
 
-Wenn Knopf B gedrückt wird, soll LED1 ein- und wieder ausgeschaltet werden.
+Wenn **Knopf B** gedrückt wird, soll **LED1** ein- und wieder ausgeschaltet werden.
 
 ``[LED1 = !(LED1)]``
 
@@ -50,7 +52,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## LEDs blinken lassen
 
-Wenn Knopf A und B zusammen gedrückt werden, dann sollen beide LEDs blinken.
+Wenn **Knopf A und B zusammen** gedrückt werden, dann sollen beide LEDs blinken.
 
 ``[blinken = !(blinken)]``
 
@@ -63,7 +65,7 @@ input.onButtonPressed(Button.AB, function () {
 
 ## Sollen die LEDs blinken?
 
-Überprüfe dauerhaft die Variable ``||variables:blinken||``:
+Überprüfe **dauerhaft** die Variable ``||variables:blinken||``:
 
 ``[basic.forever()]``
 
@@ -79,19 +81,17 @@ basic.forever(function () {
 
 ## LEDs abwechselnd blinken lassen
 
-LED0 einschalten:
+Wenn die LEDs blinken sollen (``||variables:blinken||``), dann schalte die LEDs für 200ms ein und danach für 200ms aus.
 
+LEDs  einschalten:
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
-
-LED1 einschalten:
-
 ``[pins.digitalWritePin(DigitalPin.P1, 1)]``
 
-und ausschalten:
-
+LEDs ausschalten:
 ``[pins.digitalWritePin(DigitalPin.P0, 0)]``
 ``[pins.digitalWritePin(DigitalPin.P1, 0)]``
 
+Warten:
 ``[basic.pause(200)]``
 
 ```blocks
@@ -109,6 +109,8 @@ basic.forever(function () {
 ```
 
 ## LED0 ein- und ausschalten
+
+Wenn die LEDs nicht blinken, dann prüfe, ob LED0 eingeschaltet werden soll.
 
 ``[if (LED0) {} else {}]``
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
@@ -133,7 +135,9 @@ basic.forever(function () {
 })
 ```
 
-## LED0 ein- und ausschalten
+## LED1 ein- und ausschalten
+
+Wenn die LEDs nicht blinken, dann prüfe, ob LED1 eingeschaltet werden soll.
 
 ``[if (LED1) {} else {}]``
 ``[pins.digitalWritePin(DigitalPin.P1, 1)]``
@@ -162,3 +166,10 @@ basic.forever(function () {
     }
 })
 ```
+
+## Fertiges Projekt
+
+Teste ein Programm zusammen mit dem Schaltplan.
+
+
+<script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
