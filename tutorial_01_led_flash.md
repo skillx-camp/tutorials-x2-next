@@ -113,7 +113,9 @@ basic.forever(function () {
 Wenn die LEDs nicht blinken, dann prüfe, ob LED0 eingeschaltet werden soll.
 
 ``[if (LED0) {} else {}]``
+
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
+
 ``[pins.digitalWritePin(DigitalPin.P0, 0)]``
 
 ```blocks
@@ -140,7 +142,9 @@ basic.forever(function () {
 Wenn die LEDs nicht blinken, dann prüfe, ob LED1 eingeschaltet werden soll.
 
 ``[if (LED1) {} else {}]``
+
 ``[pins.digitalWritePin(DigitalPin.P1, 1)]``
+
 ``[pins.digitalWritePin(DigitalPin.P1, 0)]``
 
 ```blocks
