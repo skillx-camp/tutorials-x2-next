@@ -16,6 +16,8 @@
 * [Examples](https://github.com/microsoft/pxt-microbit/tree/master/docs/tutorials) 
 * [Youtube Creating Tutorials](https://www.youtube.com/watch?v=R-kY-dQXZvA)
 
+### Approval
+* [Approval](https://support.microbit.org/support/solutions/articles/19000054952-makecode-extension-and-tutorial-approval#tutorials)
 
 #### Metadata (used for search, rendering)
 

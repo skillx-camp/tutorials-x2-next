@@ -1,5 +1,5 @@
 {
-    "name": "tutorials-x2-next",
+    "name": "Tutorials X2 Next",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -11,7 +11,8 @@
         "README.md",
         "tutorial_example.md",
         "tutorial_example2.md",
-        "tutorial_01_leds.md"
+        "tutorial_01_leds.md",
+        "tutorial_01_led_flash.md"
     ],
     "testFiles": [
         "test.ts"

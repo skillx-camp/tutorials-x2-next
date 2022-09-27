@@ -1,4 +1,4 @@
-# X2 Next - Example Tutorial 01
+# X2 Next - Tutorial 01 LEDs
 
 ## It's time to code! @showhint
 
