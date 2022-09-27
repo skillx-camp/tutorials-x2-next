@@ -113,6 +113,7 @@ basic.forever(function () {
 Wenn die LEDs nicht blinken, dann prüfe, ob LED0 eingeschaltet werden soll.
 
 ``[if (LED0) {} else {}]``
+
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
 ``[pins.digitalWritePin(DigitalPin.P0, 0)]``
 
@@ -140,6 +141,7 @@ basic.forever(function () {
 Wenn die LEDs nicht blinken, dann prüfe, ob LED1 eingeschaltet werden soll.
 
 ``[if (LED1) {} else {}]``
+
 ``[pins.digitalWritePin(DigitalPin.P1, 1)]``
 ``[pins.digitalWritePin(DigitalPin.P1, 0)]``
 
@@ -173,3 +175,4 @@ Teste ein Programm zuerstim im Simulator und dann mit einem Mico:bit.
 
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
+<script type="text/javascript" src="https://makecode.microbit.org/---embed"></script>
