@@ -1,23 +1,27 @@
-# Servo
+# Buzzer
 
 ## Einführung @unplugged
 
-Schaltplan Servo:
+Schaltplan Buzzer:
 
-![Schaltplan Servo](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/03_servo.png)
-
-
-## Variabe für den Servomotor
-
-Erstelle eine Variabeln **servo**.
-
-Setzte die Variablen **servo** beim Start auf **0**.
+![Schaltplan Buzzer](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/04_buzzer.png)
 
 
-``[let servo = 0 ]``
+## Variabe für den Buzzer
+
+Erstelle eine Variabeln **buzzer**.
+
+Schalte beim Start den internen Lautsprecher aus und
+setzte die Variablen **buzzer** auf **131**.
+
+``[music.setBuiltInSpeakerEnabled(false)hbivgiunn
+]``
+
+``[let buzzer = 131]``
 
 ```blocks
-let servo = 0
+music.setBuiltInSpeakerEnabled(false)
+let buzzer = 131
 ```
 
 ## Servo auf Pin 1

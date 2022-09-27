@@ -2,9 +2,9 @@
 
 ## Einführung @unplugged
 
-Schaltplan LED:
+Schaltplan Dreifarbige LED:
 
-![Schaltplan LED](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/02_led_rgb_board.png)
+![Schaltplan Dreifarbige LED](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/02_led_rgb_board.png)
 
 
 ## Variabeln für die LEDs
