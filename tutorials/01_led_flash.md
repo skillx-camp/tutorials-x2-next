@@ -169,7 +169,7 @@ basic.forever(function () {
 
 ## Fertiges Projekt
 
-Teste ein Programm zusammen mit dem Schaltplan.
+Teste ein Programm zuerstim im Simulator und dann mit einem Mico:bit.
 
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
