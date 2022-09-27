@@ -1,5 +1,20 @@
 # Getting Started
 
+``|primary button|``
+
+``||secondary button||``
+
+``[let myNum: number = null; pause(myNum)]``
+
+``[let txt = "text"]``
+
+``|logic:false;|``
+
+``[let txt = !false  ]``
+
+``[let txt = !true;]``
+
+
 ## Step 1
 
 Welcome! Place the ``||basic:show string||`` block in the ``||basic:on start||`` slot. Replace the ``"Hello"`` text with your name. Did you see it scroll in the simulator?
@@ -19,7 +34,20 @@ input.onButtonPressed(Button.A, () => {
 ```
 
 ## Step 3
+https://makecode.com/writing-docs/macros
+### ~hint
+### ~reminder
+### ~alert
+### ~tip
+#### Tip Title
+[content]
+### ~
 
+## ~button /writing-docs/tutorials
+
+NEXT: Tutorials
+
+## ~
 Place some blocks to display a smiley when button **B** is pressed.
 
 Use the dropdown to find ``B``!

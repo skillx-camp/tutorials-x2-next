@@ -13,6 +13,7 @@
 
 * [Tutorial Editor](https://makecode.com/tutorial-too)
 * [Writing tutorials](https://makecode.com/writing-docs/tutorials)
+* [Markdown](https://github.com/microsoft/pxt-microbit/tree/master/docs/reference), [HTML](https://makecode.microbit.org/reference)
 * [Examples](https://github.com/microsoft/pxt-microbit/tree/master/docs/tutorials) 
 * [Youtube Creating Tutorials](https://www.youtube.com/watch?v=R-kY-dQXZvA)
 
