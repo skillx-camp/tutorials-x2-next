@@ -26,7 +26,7 @@ let LED0 = true
 
 ## LED0 ein- und ausschalten
 
-Wenn **Knopf A** gedrückt wird, soll **LED0** ein- und wieder ausgeschaltet werden.
+Wenn **Knopf A** gedrückt wird, dann soll **LED0** ein- und wieder ausgeschaltet werden.
 
 ``[LED0 = !(LED0)]``
 
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten
 
-Wenn **Knopf B** gedrückt wird, soll **LED1** ein- und wieder ausgeschaltet werden.
+Wenn **Knopf B** gedrückt wird, dann soll **LED1** ein- und wieder ausgeschaltet werden.
 
 ``[LED1 = !(LED1)]``
 
@@ -169,10 +169,9 @@ basic.forever(function () {
 })
 ```
 
-## Fertiges Projekt
+## Fertiges Projekt testen
 
 Teste ein Programm zuerstim im Simulator und dann mit einem Mico:bit.
 
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
-<script type="text/javascript" src="https://makecode.microbit.org/---embed"></script>
