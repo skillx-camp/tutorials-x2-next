@@ -9,7 +9,9 @@ Schaltplan LED:
 
 ## Variabeln für die LEDs
 
-Erstelle drei Variabeln und setzte alle drei Variablen beim Start auf ``||logic:wahr||``.
+Erstelle drei Variabeln **LED0**, **LED1** und **blinken**.
+
+Setzte alle drei Variablen beim Start auf ``||logic:wahr||``.
 
 ``[let LED0 = true ]``
 
