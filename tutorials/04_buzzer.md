@@ -12,79 +12,86 @@ Schaltplan Buzzer:
 Erstelle eine Variabeln **buzzer**.
 
 Schalte beim Start den internen Lautsprecher aus und
-setzte die Variablen **buzzer** auf **131**.
+setzte die Variablen **buzzer** auf **523**.
 
-``[music.setBuiltInSpeakerEnabled(false)hbivgiunn
-]``
+``[music.setBuiltInSpeakerEnabled(false)]``
 
-``[let buzzer = 131]``
+``[let buzzer = 523]``
 
 ```blocks
 music.setBuiltInSpeakerEnabled(false)
-let buzzer = 131
+let buzzer = 523
 ```
 
-## Servo auf Pin 1
+## Ton ausgeben
 
-Setze dauerhaft den **Pin 1** auf den Wert von **servo**.
+Setze dauerhaft die Note, die in der Variable **buzzer** gespeichert ist.
 
 ``[basic.forever()]``
 
-``[pins.servoWritePin(AnalogPin.P1, servo)]``
+``[music.ringTone(buzzer)]``
 
 
 ```blocks
 basic.forever(function () {
-    pins.servoWritePin(AnalogPin.P1, servo)
+    music.ringTone(buzzer)
 })
 ```
 
-## Auf und zu
+## Tonhöhe verändern - Knopf A
 
-Wenn **Knopf A und B zusammen** gedrückt wird, dann soll zu oder auf gehen.
-Wenn der Servomotor offen ist ist (**servo > 0**), dann setze  **servo** auf **0**.
-Ansonsten setze **servo** auf **180**.
+Wenn **Knopf A** gedrückt wird, dann soll der Ton tiefer werden, jedoch nicht tiefer als 130.
 
-``[if (servo > 0) {} else {}]``
+``[input.onButtonPressed(Button.A, function () {}]``
 
-``[let servo = 0 ]``
+``[buzzer = Math.max(130, buzzer - 9)]``
 
-``[let servo = 180 ]``
+```blocks
+input.onButtonPressed(Button.A, function () {
+    buzzer = Math.max(131, buzzer - 9)
+})
+```
+
+## Tonhöhe verändern - Knopf B
+
+Wenn **Knopf B** gedrückt wird, dann soll der Ton höher werden, jedoch nicht höher als 988.
+
+``[input.onButtonPressed(Button.B, function () {}]``
+
+``[buzzer = Math.min(988, buzzer + 9)]``
+
+```blocks
+input.onButtonPressed(Button.B, function () {
+    buzzer = Math.min(988, buzzer + 9)
+})
+```
+
+
+## Melodie abspielen
+
+Wenn **Knopf A und B zusammen** gedrückt wird, dann soll eine Melodie gespielt werden.
+
+``[input.onButtonPressed(Button.AB, function () {}]``
+
+``[for (let index = 0; index < 5; index++) {}]``
+
+``[buzzer = 523 ]``
+``[basic.pause(500) ]``
+``[buzzer = 659 ]``
+``[basic.pause(500) ]``
+
+``[buzzer = 0 ]``
 
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {
-    if (servo > 0) {
-        servo = 0
-    } else {
-        servo = 180
+    for (let index = 0; index < 5; index++) {
+        buzzer = 523
+        basic.pause(500)
+        buzzer = 659
+        basic.pause(500)
     }
-})
-```
-
-## Schrittweise öffnen
-
-Jedesmal wenn **Knopf B** gedrückt wird, soll der Servo um 10 Schritte geöffnet werden.
-Der Wert darf dabei nicht grösser als **180** werden.
-
-``[servo = Math.min(180, servo + 10))]``
-
-```blocks
-input.onButtonPressed(Button.B, function () {
-    servo = Math.min(180, servo + 10)
-})
-```
-
-## Schrittweise schliessen
-
-Jedesmal wenn **Knopf A** gedrückt wird, soll der Servo um 10 Schritte geschlossen werden.
-Der Wert darf dabei nicht kleiner als **0** werden.
-
-``[servo = Math.max(0, servo - 10)]``
-
-```blocks
-input.onButtonPressed(Button.A, function () {
-    servo = Math.max(0, servo - 10)
+    buzzer = 0
 })
 ```
 
