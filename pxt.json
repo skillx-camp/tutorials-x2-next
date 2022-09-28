@@ -16,7 +16,8 @@
         "tutorials/01_led_flash.md",
         "tutorials/02_led_rgb.md",
         "tutorials/03_servo.md",
-        "tutorials/04_buzzer.md"
+        "tutorials/04_buzzer.md",
+        "tutorials/05_motor.md"
     ],
     "testFiles": [
         "test.ts"

@@ -70,6 +70,7 @@ input.onButtonPressed(Button.B, function () {
 ## Melodie abspielen
 
 Wenn **Knopf A und B zusammen** gedrückt wird, dann soll eine Melodie gespielt werden.
+Mit ``buzzer = 0`` wird der Buzzer ausgeschaltet.
 
 ``[input.onButtonPressed(Button.AB, function () {}]``
 
@@ -78,7 +79,7 @@ Wenn **Knopf A und B zusammen** gedrückt wird, dann soll eine Melodie gespielt 
 ``[buzzer = 523 ]``
 ``[basic.pause(500) ]``
 ``[buzzer = 659 ]``
-``[basic.pause(500) ]``
+
 
 ``[buzzer = 0 ]``
 
