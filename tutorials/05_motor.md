@@ -57,9 +57,7 @@ basic.forever(function () {
 
 ``[basic.forever()]``
 
-``[if (motor) {} else {}]``
-
-``[pins.digitalReadPin(DigitalPin.P1) == 0]``
+``[if (pins.digitalReadPin(DigitalPin.P1) == 0) {} else {}]``
 
 ``[motor = true]``
 ``[motor = false]``
