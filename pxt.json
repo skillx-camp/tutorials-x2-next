@@ -17,7 +17,8 @@
         "tutorials/02_led_rgb.md",
         "tutorials/03_servo.md",
         "tutorials/04_buzzer.md",
-        "tutorials/05_motor.md"
+        "tutorials/05_motor.md",
+        "tutorial-info-cache.json"
     ],
     "testFiles": [
         "test.ts"
