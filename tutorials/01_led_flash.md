@@ -1,13 +1,13 @@
 # LED blinken lassen. 
 
-## Einführung @unplugged
+## Einführung @showdialog
 
 Schaltplan LED:
 
 ![Schaltplan LED](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/01_leds_board.png)
 
 
-## Variabeln für die LEDs
+## Variabeln für die LEDs @unplugged
 
 Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||variables:blinken||``.
 
@@ -23,17 +23,33 @@ LED1 = false
 blinken = false
 ```
 
+## Variabeln für die LEDs
+
+Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||variables:blinken||``.
+
+``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
+
 ```blocks
 blinken = false
 LED1 = false
 LED0 = false
 ```
 
-## LED0 ein- und ausschalten
+
+## LED0 ein- und ausschalten @unplugged
 
 Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` ein- und wieder ausgeschaltet werden.
 
-``[LED0 = !(LED0)]``
+```block
+input.onButtonPressed(Button.A, function () {})
+```
+```block
+LED0 = !(LED0)
+```
+
+## LED0 ein- und ausschalten
+
+Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` ein- und wieder ausgeschaltet werden.
 
 
 ```blocks
@@ -42,12 +58,20 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## LED1 ein- und ausschalten
+## LED1 ein- und ausschalten @unplugged
 
 Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` ein- und wieder ausgeschaltet werden.
 
-``[LED1 = !(LED1)]``
+```block
+input.onButtonPressed(Button.B, function () {})
+```
+```block
+LED1 = !(LED1)
+```
 
+## LED1 ein- und ausschalten
+
+Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` ein- und wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
@@ -55,12 +79,21 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
+
+## LEDs blinken lassen @unplugged
+
+Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
+
+```block
+input.onButtonPressed(Button.AB, function () {})
+```
+```block
+blinken = !(blinken)
+```
+
 ## LEDs blinken lassen
 
-Wenn ``||input:Knopf A und B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
-
-``[blinken = !(blinken)]``
-
+Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {
@@ -68,13 +101,21 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-## Sollen die LEDs blinken?
+
+## Sollen die LEDs blinken? @unplugged
 
 Überprüfe ``||basic:dauerhaft||`` die Variable ``||variables:blinken||``:
 
-``[basic.forever()]``
+```block
+basic.forever()
+```
+```block
+if (blinken) {} else {}
+```
 
-``[if (blinken) {} else {}]``
+## Sollen die LEDs blinken?
+
+Überprüfe ``||basic:dauerhaft||`` die Variable ``||variables:blinken||``:
 
 ```blocks
 basic.forever(function () {
@@ -84,20 +125,34 @@ basic.forever(function () {
 })
 ```
 
-## LEDs abwechselnd blinken lassen
+## LEDs abwechselnd blinken lassen @unplugged
 
 Wenn die LEDs blinken sollen (``||variables:blinken||``), dann schalte die LEDs für ``||basic:200ms||`` ein und danach für ``||basic:200ms||`` aus.
 
-LEDs  einschalten:
-``[pins.digitalWritePin(DigitalPin.P0, 1)]``
-``[pins.digitalWritePin(DigitalPin.P1, 1)]``
+```block
+pins.digitalWritePin(DigitalPin.P0, 1)
+```
 
-LEDs ausschalten:
-``[pins.digitalWritePin(DigitalPin.P0, 0)]``
-``[pins.digitalWritePin(DigitalPin.P1, 0)]``
+```block
+pins.digitalWritePin(DigitalPin.P1, 1)
+```
+```block
+basic.pause(200)
+```
+```block
+pins.digitalWritePin(DigitalPin.P0, 0)
+```
+```block
+pins.digitalWritePin(DigitalPin.P1, 0)
+```
+```block
+basic.pause(200)
+```
 
-Warten:
-``[basic.pause(200)]``
+
+## LEDs abwechselnd blinken lassen
+
+Wenn die LEDs blinken sollen (``||variables:blinken||``), dann schalte die LEDs für ``||basic:200ms||`` ein und danach für ``||basic:200ms||`` aus.
 
 ```diffblocks
 basic.forever(function () {
@@ -119,14 +174,23 @@ basic.forever(function () {
 })
 ```
 
-## LED0 ein- und ausschalten
+## LED0 ein- und ausschalten @unplugged
 
 Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED0||`` eingeschaltet werden soll.
 
-``[if (LED0) {} else {}]``
+```block
+if (LED0) {} else {}
+```
+```block
+pins.digitalWritePin(DigitalPin.P0, 1)
+```
+```block
+pins.digitalWritePin(DigitalPin.P0, 0)
+```
 
-``[pins.digitalWritePin(DigitalPin.P0, 1)]``
-``[pins.digitalWritePin(DigitalPin.P0, 0)]``
+## LED0 ein- und ausschalten
+
+Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED0||`` eingeschaltet werden soll.
 
 ```diffblocks
 basic.forever(function () {
@@ -159,14 +223,23 @@ basic.forever(function () {
 })
 ```
 
-## LED1 ein- und ausschalten
+## LED1 ein- und ausschalten @unplugged
 
 Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED1||`` eingeschaltet werden soll.
 
-``[if (LED1) {} else {}]``
+```block
+if (LED1) {} else {}
+```
+```block
+pins.digitalWritePin(DigitalPin.P1, 1)
+```
+```block
+pins.digitalWritePin(DigitalPin.P1, 0)
+```
 
-``[pins.digitalWritePin(DigitalPin.P1, 1)]``
-``[pins.digitalWritePin(DigitalPin.P1, 0)]``
+## LED1 ein- und ausschalten 
+
+Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED1||`` eingeschaltet werden soll.
 
 ```diffblocks
 basic.forever(function () {
