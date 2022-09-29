@@ -9,26 +9,29 @@ Schaltplan LED:
 
 ## Variabeln für die LEDs
 
-Erstelle drei Variabeln **LED0**, **LED1** und **blinken**.
+Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||variables:blinken||``.
 
-Setzte alle drei Variablen beim Start auf ``||logic:wahr||``.
+``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
-``[let LED0 = true ]``
-
-``[let LED1 = true ]``
-
-``[let blinken = true ]``
-
+```block
+LED0 = false
+```
+```block
+LED1 = false 
+```
+```block
+blinken = false
+```
 
 ```blocks
-let blinken = true
-let LED1 = true
-let LED0 = true
+blinken = false
+LED1 = false
+LED0 = false
 ```
 
 ## LED0 ein- und ausschalten
 
-Wenn **Knopf A** gedrückt wird, dann soll **LED0** ein- und wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` ein- und wieder ausgeschaltet werden.
 
 ``[LED0 = !(LED0)]``
 
@@ -41,7 +44,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten
 
-Wenn **Knopf B** gedrückt wird, dann soll **LED1** ein- und wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` ein- und wieder ausgeschaltet werden.
 
 ``[LED1 = !(LED1)]``
 
@@ -54,7 +57,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## LEDs blinken lassen
 
-Wenn **Knopf A und B zusammen** gedrückt werden, dann sollen beide LEDs blinken.
+Wenn ``||input:Knopf A und B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
 
 ``[blinken = !(blinken)]``
 
@@ -67,7 +70,7 @@ input.onButtonPressed(Button.AB, function () {
 
 ## Sollen die LEDs blinken?
 
-Überprüfe **dauerhaft** die Variable ``||variables:blinken||``:
+Überprüfe ``||basic:dauerhaft||`` die Variable ``||variables:blinken||``:
 
 ``[basic.forever()]``
 
@@ -83,7 +86,7 @@ basic.forever(function () {
 
 ## LEDs abwechselnd blinken lassen
 
-Wenn die LEDs blinken sollen (``||variables:blinken||``), dann schalte die LEDs für 200ms ein und danach für 200ms aus.
+Wenn die LEDs blinken sollen (``||variables:blinken||``), dann schalte die LEDs für ``||basic:200ms||`` ein und danach für ``||basic:200ms||`` aus.
 
 LEDs  einschalten:
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
@@ -96,7 +99,13 @@ LEDs ausschalten:
 Warten:
 ``[basic.pause(200)]``
 
-```blocks
+```diffblocks
+basic.forever(function () {
+    if (blinken) {
+    } else {
+    }
+})
+----------
 basic.forever(function () {
     if (blinken) {
         pins.digitalWritePin(DigitalPin.P0, 0)
@@ -112,14 +121,26 @@ basic.forever(function () {
 
 ## LED0 ein- und ausschalten
 
-Wenn die LEDs nicht blinken, dann prüfe, ob LED0 eingeschaltet werden soll.
+Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED0||`` eingeschaltet werden soll.
 
 ``[if (LED0) {} else {}]``
 
 ``[pins.digitalWritePin(DigitalPin.P0, 1)]``
 ``[pins.digitalWritePin(DigitalPin.P0, 0)]``
 
-```blocks
+```diffblocks
+basic.forever(function () {
+    if (blinken) {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.P1, 1)
+        basic.pause(200)
+        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.P1, 0)
+        basic.pause(200)
+    } else {
+    }
+})
+----------
 basic.forever(function () {
     if (blinken) {
         pins.digitalWritePin(DigitalPin.P0, 0)
@@ -140,14 +161,31 @@ basic.forever(function () {
 
 ## LED1 ein- und ausschalten
 
-Wenn die LEDs nicht blinken, dann prüfe, ob LED1 eingeschaltet werden soll.
+Wenn die LEDs nicht blinken, dann prüfe, ob ``||variables:LED1||`` eingeschaltet werden soll.
 
 ``[if (LED1) {} else {}]``
 
 ``[pins.digitalWritePin(DigitalPin.P1, 1)]``
 ``[pins.digitalWritePin(DigitalPin.P1, 0)]``
 
-```blocks
+```diffblocks
+basic.forever(function () {
+    if (blinken) {
+        pins.digitalWritePin(DigitalPin.P0, 0)
+        pins.digitalWritePin(DigitalPin.P1, 1)
+        basic.pause(200)
+        pins.digitalWritePin(DigitalPin.P0, 1)
+        pins.digitalWritePin(DigitalPin.P1, 0)
+        basic.pause(200)
+    } else {
+        if (LED0) {
+            pins.digitalWritePin(DigitalPin.P0, 1)
+        } else {
+            pins.digitalWritePin(DigitalPin.P0, 0)
+        }
+    }
+})
+----------
 basic.forever(function () {
     if (blinken) {
         pins.digitalWritePin(DigitalPin.P0, 0)
