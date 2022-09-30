@@ -86,7 +86,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Fertiges Projekt testen
 
-Teste ein Programm zuerst im im Simulator und dann mit einem Mico:bit.
+Teste dein Programm zuerst im Simulator und dann mit einem Mico:bit.
 
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>

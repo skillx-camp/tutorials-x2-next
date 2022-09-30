@@ -1,5 +1,9 @@
 # LED blinken lassen. 
 
+```template
+basic.forever()
+```
+
 ## Einführung @showdialog
 
 Schaltplan LED:
@@ -13,6 +17,8 @@ Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||v
 
 ``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
+```blocks
+```
 ```block
 LED0 = false
 ```
@@ -38,7 +44,8 @@ LED0 = false
 
 ## LED0 ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` ein- und wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
+Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
 
 ```block
 input.onButtonPressed(Button.A, function () {})
@@ -49,8 +56,8 @@ LED0 = !(LED0)
 
 ## LED0 ein- und ausschalten
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` ein- und wieder ausgeschaltet werden.
-
+Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
+Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -60,7 +67,8 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` ein- und wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
+Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
 
 ```block
 input.onButtonPressed(Button.B, function () {})
@@ -71,7 +79,8 @@ LED1 = !(LED1)
 
 ## LED1 ein- und ausschalten
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` ein- und wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
+Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
@@ -83,6 +92,7 @@ input.onButtonPressed(Button.B, function () {
 ## LEDs blinken lassen @unplugged
 
 Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
+Wenn die Knöpfe noch mal gedrückt wird, soll das blinken wieder aufhören.
 
 ```block
 input.onButtonPressed(Button.AB, function () {})
@@ -94,6 +104,7 @@ blinken = !(blinken)
 ## LEDs blinken lassen
 
 Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
+Wenn die Knöpfe noch mal gedrückt wird, soll das blinken wieder aufhören.
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {
@@ -284,7 +295,7 @@ basic.forever(function () {
 
 ## Fertiges Projekt testen
 
-Teste ein Programm zuerst im im Simulator und dann mit einem Mico:bit.
+Teste dein Programm zuerst im Simulator und dann mit einem Mico:bit.
 
 
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
