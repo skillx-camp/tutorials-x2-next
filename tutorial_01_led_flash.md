@@ -26,7 +26,7 @@ let LED0 = true
 
 ## LED0 ein- und ausschalten
 
-Wenn **Knopf A** gedrückt wird, soll **LED0** ein- und wieder ausgeschaltet werden.
+Wenn **Knopf A** geklickt wird, soll **LED0** ein- und wieder ausgeschaltet werden.
 
 ``[LED0 = !(LED0)]``
 
@@ -39,7 +39,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten
 
-Wenn **Knopf B** gedrückt wird, soll **LED1** ein- und wieder ausgeschaltet werden.
+Wenn **Knopf B** geklickt wird, soll **LED1** ein- und wieder ausgeschaltet werden.
 
 ``[LED1 = !(LED1)]``
 
@@ -52,7 +52,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## LEDs blinken lassen
 
-Wenn **Knopf A und B zusammen** gedrückt werden, dann sollen beide LEDs blinken.
+Wenn **Knopf A und B zusammen** geklickt werden, dann sollen beide LEDs blinken.
 
 ``[blinken = !(blinken)]``
 

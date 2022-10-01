@@ -40,7 +40,7 @@ basic.forever(function () {
 
 ## Tonhöhe verändern - Knopf A
 
-Wenn **Knopf A** gedrückt wird, dann soll der Ton tiefer werden, jedoch nicht tiefer als 130.
+Wenn **Knopf A** geklickt wird, dann soll der Ton tiefer werden, jedoch nicht tiefer als 130.
 
 ``[input.onButtonPressed(Button.A, function () {}]``
 
@@ -54,7 +54,7 @@ input.onButtonPressed(Button.A, function () {
 
 ## Tonhöhe verändern - Knopf B
 
-Wenn **Knopf B** gedrückt wird, dann soll der Ton höher werden, jedoch nicht höher als 988.
+Wenn **Knopf B** geklickt wird, dann soll der Ton höher werden, jedoch nicht höher als 988.
 
 ``[input.onButtonPressed(Button.B, function () {}]``
 
@@ -69,7 +69,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Melodie abspielen
 
-Wenn **Knopf A und B zusammen** gedrückt wird, dann soll eine Melodie gespielt werden.
+Wenn **Knopf A und B zusammen** geklickt wird, dann soll eine Melodie gespielt werden.
 Mit ``buzzer = 0`` wird der Buzzer ausgeschaltet.
 
 ``[input.onButtonPressed(Button.AB, function () {}]``

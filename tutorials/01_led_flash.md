@@ -44,8 +44,8 @@ LED0 = false
 
 ## LED0 ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` geklickt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```block
 input.onButtonPressed(Button.A, function () {})
@@ -56,8 +56,8 @@ LED0 = !(LED0)
 
 ## LED0 ein- und ausschalten
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` geklickt wird, dann soll ``||variables:LED0||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -67,8 +67,8 @@ input.onButtonPressed(Button.A, function () {
 
 ## LED1 ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` geklickt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```block
 input.onButtonPressed(Button.B, function () {})
@@ -79,8 +79,8 @@ LED1 = !(LED1)
 
 ## LED1 ein- und ausschalten
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` geklickt wird, dann soll ``||variables:LED1||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
@@ -91,8 +91,8 @@ input.onButtonPressed(Button.B, function () {
 
 ## LEDs blinken lassen @unplugged
 
-Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
-Wenn die Knöpfe noch mal gedrückt wird, soll das blinken wieder aufhören.
+Wenn ``||input:Knopf A+B||`` **zusammen** geklickt werden, dann sollen beide LEDs ``||variables:blinken||``.
+Wenn die Knöpfe noch mal geklickt wird, soll das blinken wieder aufhören.
 
 ```block
 input.onButtonPressed(Button.AB, function () {})
@@ -103,8 +103,8 @@ blinken = !(blinken)
 
 ## LEDs blinken lassen
 
-Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann sollen beide LEDs ``||variables:blinken||``.
-Wenn die Knöpfe noch mal gedrückt wird, soll das blinken wieder aufhören.
+Wenn ``||input:Knopf A+B||`` **zusammen** geklickt werden, dann sollen beide LEDs ``||variables:blinken||``.
+Wenn die Knöpfe noch mal geklickt wird, soll das blinken wieder aufhören.
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {

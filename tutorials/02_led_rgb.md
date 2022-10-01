@@ -45,8 +45,8 @@ blau = false
 
 ## LED rot ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:rot||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` geklickt wird, dann soll ``||variables:rot||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 ```block
 input.onButtonPressed(Button.A, function () {})
 ```
@@ -56,8 +56,8 @@ rot = !(rot)
 
 ## LED rot ein- und ausschalten 
 
-Wenn ``||input:Knopf A||`` gedrückt wird, dann soll ``||variables:rot||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A||`` geklickt wird, dann soll ``||variables:rot||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -101,8 +101,8 @@ basic.forever(function () {
 
 ## LED grün ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:grün||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` geklickt wird, dann soll ``||variables:grün||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 ```block
 input.onButtonPressed(Button.B, function () {})
 ```
@@ -112,8 +112,8 @@ grün = !(grün)
 
 ## LED grün ein- und ausschalten
 
-Wenn ``||input:Knopf B||`` gedrückt wird, dann soll ``||variables:grün||`` eingeschaltet werden. 
-Wenn der Knopf noch mal gedrückt wird, soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf B||`` geklickt wird, dann soll ``||variables:grün||`` eingeschaltet werden. 
+Wenn der Knopf noch mal geklickt wird, soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.B, function () {
@@ -166,8 +166,8 @@ basic.forever(function () {
 
 ## LED blau ein- und ausschalten @unplugged
 
-Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann soll ``||variables:blau||`` eingeschaltet werden. 
-Wenn die Knöpfe noch mal gedrückt werden, dann soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A+B||`` **zusammen** geklickt werden, dann soll ``||variables:blau||`` eingeschaltet werden. 
+Wenn die Knöpfe noch mal geklickt werden, dann soll sie wieder ausgeschaltet werden.
 ```block
 input.onButtonPressed(Button.AB, function () {})
 ```
@@ -177,8 +177,8 @@ blau = !(blau)
 
 ## LED blau ein- und ausschalten
 
-Wenn ``||input:Knopf A+B||`` **zusammen** gedrückt werden, dann soll ``||variables:blau||`` eingeschaltet werden. 
-Wenn die Knöpfe noch mal gedrückt werden, dann soll sie wieder ausgeschaltet werden.
+Wenn ``||input:Knopf A+B||`` **zusammen** geklickt werden, dann soll ``||variables:blau||`` eingeschaltet werden. 
+Wenn die Knöpfe noch mal geklickt werden, dann soll sie wieder ausgeschaltet werden.
 
 ```blocks
 input.onButtonPressed(Button.AB, function () {
