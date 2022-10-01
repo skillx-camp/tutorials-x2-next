@@ -15,7 +15,7 @@ Schaltplan LED:
 
 Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||variables:blinken||``.
 
-``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
+``||variables:Setze||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
 ```blocks
 ```
@@ -33,7 +33,7 @@ blinken = false
 
 Erstelle drei Variabeln ``||variables:LED0||``, ``||variables:LED1||`` und ``||variables:blinken||``.
 
-``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
+``||variables:Setze||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
 ```blocks
 blinken = false

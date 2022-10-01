@@ -15,7 +15,7 @@ Schaltplan Servo:
 
 Erstelle eine Variabele ``||variables:servo||``.
 
-``||variables:Setzte||`` die Variable ``||variables:servo||`` ``||basic:beim Start||`` auf ``||variables:0||``.
+``||variables:Setze||`` die Variable ``||variables:servo||`` ``||basic:beim Start||`` auf ``||variables:0||``.
 
 
 ```blocks
@@ -28,7 +28,7 @@ servo = 0
 
 Erstelle eine Variabele ``||variables:servo||``.
 
-``||variables:Setzte||`` die Variable ``||variables:servo||`` ``||basic:beim Start||`` auf ``||variables:0||``.
+``||variables:Setze||`` die Variable ``||variables:servo||`` ``||basic:beim Start||`` auf ``||variables:0||``.
 
 
 ```blocks

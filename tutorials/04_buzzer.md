@@ -16,7 +16,7 @@ Schaltplan Buzzer:
 Erstelle eine Variabeln ``||variables:buzzer||``.
 
 Schalte ``||basic:beim Start||`` den ``||music:internen Lautsprecher||`` aus und
-``||variables:setzte||`` die Variable ``||variables:buzzer||`` beim Start auf ``||variables:0||``.
+``||variables:setze||`` die Variable ``||variables:buzzer||`` beim Start auf ``||variables:0||``.
 
 ```blocks
 ```
@@ -32,7 +32,7 @@ buzzer = 0
 Erstelle eine Variabeln ``||variables:buzzer||``.
 
 Schalte ``||basic:beim Start||`` den ``||music:internen Lautsprecher||`` aus und
-``||variables:setzte||`` die Variable ``||variables:buzzer||`` beim Start auf ``||variables:0||``.
+``||variables:setze||`` die Variable ``||variables:buzzer||`` beim Start auf ``||variables:0||``.
 
 ```blocks
 music.setBuiltInSpeakerEnabled(false)

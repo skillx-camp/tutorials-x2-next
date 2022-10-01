@@ -15,7 +15,7 @@ Schaltplan Dreifarbige LED:
 
 Erstelle drei Variabeln ``||variables:rot||``, ``||variables:grün||`` und ``||variables:blau||``.
 
-``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
+``||variables:Setze||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
 ```blocks
 ```
@@ -34,7 +34,7 @@ blau = false
 
 Erstelle drei Variabeln ``||variables:rot||``, ``||variables:grün||`` und ``||variables:blau||``.
 
-``||variables:Setzte||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
+``||variables:Setze||`` alle drei Variablen ``||basic:beim Start||`` auf ``||logic:falsch||``.
 
 
 ```blocks
