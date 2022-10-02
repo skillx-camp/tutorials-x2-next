@@ -1,13 +1,13 @@
 
-> Open this page at [https://philipphgerber.github.io/tutorials-x2-next/](https://philipphgerber.github.io/tutorials-x2-next/)
+> Open this page at [https://skillx-camp.github.io/tutorials-x2-next/](https://skillx-camp.github.io/tutorials-x2-next/)
 
 ## Tutorials
 
-* [Tutorial 01 LEDs](https://philipphgerber.github.io/tutorials-x2-next/tutorial_01_leds)
-
-* [Example](https://philipphgerber.github.io/tutorials-x2-next/tutorial_example)
-* [Example 2](https://philipphgerber.github.io/tutorials-x2-next/tutorial_example2)
-
+* [Tutorial 1 - LED](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/01_led_flash)
+* [Tutorial 2 - RGB LED](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/02_led_rgb)
+* [Tutorial 3 - Servo](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/03_servo)
+* [Tutorial 4 - Buzzer](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/04_buzzer)
+* [Tutorial 3 - Motor](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/05_motor)
 
 ## How to create a tutorial
 
