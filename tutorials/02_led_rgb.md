@@ -1,9 +1,5 @@
 # Dreifarbige LED. 
 
-```template
-basic.forever()
-```
-
 ## Einführung @showdialog
 
 Schaltplan Dreifarbige LED:

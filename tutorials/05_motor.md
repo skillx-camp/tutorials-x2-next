@@ -1,9 +1,5 @@
 # Motor
 
-```template
-basic.forever()
-```
-
 ## Einführung @showdialog
 
 Schaltplan Motor:

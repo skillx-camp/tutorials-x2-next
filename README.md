@@ -7,7 +7,8 @@
 * [Tutorial 2 - RGB LED](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/02_led_rgb)
 * [Tutorial 3 - Servo](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/03_servo)
 * [Tutorial 4 - Buzzer](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/04_buzzer)
-* [Tutorial 3 - Motor](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/05_motor)
+* [Tutorial 5 - Motor](https://makecode.microbit.org/#tutorial:github:skillx-camp/tutorials-x2-next/tutorials/05_motor)
+* [Tutorial 6 - Regenbogen]
 
 ## How to create a tutorial
 

@@ -1,9 +1,5 @@
 # LED blinken lassen. 
 
-```template
-basic.forever()
-```
-
 ## Einführung @showdialog
 
 Schaltplan LED:

@@ -1,9 +1,5 @@
 # Buzzer
 
-```template
-basic.forever()
-```
-
 ## Einführung @showdialog
 
 Schaltplan Buzzer:
@@ -63,23 +59,23 @@ basic.forever(function () {
 ## Kein Ton ausgeben  @unplugged
 
 Wenn ``||input:das Logo gedrückt||`` wird, dann soll kein Ton mehr ausgegeben werden
-(``||music:Note||`` = 0).
+(``||variables:buzzer||`` = 0).
 
 ```block
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {})
 ```
 ```block
-music.ringTone(0)
+buzzer = 0
 ```
 
 ## Kein Ton ausgeben
 
 Wenn ``||input:das Logo gedrückt||`` wird, dann soll kein Ton mehr ausgegeben werden
-(``||music:Note||`` = 0).
+(``||variables:buzzer||`` = 0).
 
 ```blocks
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    music.ringTone(0)
+    buzzer = 0
 })
 ```
 

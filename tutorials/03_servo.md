@@ -1,9 +1,5 @@
 # Servo
 
-```template
-basic.forever()
-```
-
 ## Einführung @showdialog
 
 Schaltplan Servo:
