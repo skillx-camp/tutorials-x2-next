@@ -10,10 +10,6 @@
     "files": [
         "main.ts",
         "README.md",
-        "tutorial_example.md",
-        "tutorial_example2.md",
-        "tutorial_01_leds.md",
-        "tutorial_01_led_flash.md",
         "tutorials/01_led_flash.md",
         "tutorials/02_led_rgb.md",
         "tutorials/03_servo.md",
