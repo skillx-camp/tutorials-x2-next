@@ -4,7 +4,7 @@
 
 Schaltplan Buzzer:
 
-![Schaltplan Buzzer](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/04_buzzer.png)
+![Schaltplan Buzzer](https://skillx-camp.github.io/tutorials-x2-next/docs/static/tutorials/04_buzzer.png)
 
 
 ## Variabe für den Buzzer @unplugged

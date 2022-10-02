@@ -4,7 +4,7 @@
 
 Schaltplan Servo:
 
-![Schaltplan Servo](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/03_servo.png)
+![Schaltplan Servo](https://skillx-camp.github.io/tutorials-x2-next/docs/static/tutorials/03_servo.png)
 
 
 ## Variabe für den Servomotor @unplugged

@@ -4,7 +4,7 @@
 
 Schaltplan LED:
 
-![Schaltplan LED](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/01_leds_board.png)
+![Schaltplan LED](https://skillx-camp.github.io/tutorials-x2-next/docs/static/tutorials/01_leds_board.png)
 
 
 ## Variabeln für die LEDs @unplugged

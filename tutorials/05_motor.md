@@ -4,7 +4,7 @@
 
 Schaltplan Motor:
 
-![Schaltplan Buzzer](https://philipphgerber.github.io/tutorials-x2-next/docs/static/tutorials/05_motor.png)
+![Schaltplan Buzzer](https://skillx-camp.github.io/tutorials-x2-next/docs/static/tutorials/05_motor.png)
 
 
 ## Variabe für den Motor @unplugged
